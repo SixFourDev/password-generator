@@ -75,11 +75,11 @@ function generatePassword() {
   var password = " ";
   // Starts the for loop and runs as many characters the length of the password will be
   for (var i = 0; i < passwordSpecs.length; i++) {
-    // Generates a random index between 0 and length of passwordCharacters array using Math random and fllor to round down the number
+    // Generates a random index between 0 and length of passwordCharacters array using Math random and floor to round down the number
     var randomIndex = Math.floor(Math.random() * passwordCharacters.length);
     password = password + passwordCharacters[randomIndex];
   }
-  // closes the foor loop
+  // closes the for loop
   return password;
 }
 
